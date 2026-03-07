@@ -1,0 +1,539 @@
+[
+  {
+    "id": "1",
+    "brand": "IGNITE",
+    "model": "V50",
+    "puffs": "5K",
+    "price": 99.99,
+    "flavors": [
+      "Morango Ice",
+      "Uva Gelada",
+      "Melancia",
+      "Menta"
+    ],
+    "image": "https://picsum.photos/seed/v50/400/400",
+    "available": false
+  },
+  {
+    "id": "2",
+    "brand": "IGNITE",
+    "model": "V55",
+    "puffs": "5,5K",
+    "price": 114.99,
+    "flavors": [
+      "Wartemelon ice: Melancia Gelada",
+      "Miami mint: Menta Fresca",
+      "Strawberry Wartemelon: Morango Melancia",
+      "Strawberey Kiwi: Morango kiwi",
+      "Morango ice: Morango Gelado"
+    ],
+    "image": "/v55.jpg",
+    "available": true
+  },
+  {
+    "id": "3",
+    "brand": "IGNITE",
+    "model": "V80",
+    "puffs": "8K",
+    "price": 129.99,
+    "flavors": [
+      "Grapefruit: Menta Toranja",
+      "Grape ice: Uva Ice",
+      "Watermelon ice: Melancia Ice",
+      "Strawberry Ice: Morango Ice",
+      "Strawberry Kiwi: Morango Kiwi",
+      "Frozen Wartemelon: Melancia Gelada",
+      "Passion Fruit Sour Kiwi: Maracujá Kiwi",
+      "Icy mint: Menta Ice",
+      "Mentol: Menta Hortelã Ice",
+      "Cactus: Leve sabor Refrescante Ice",
+      "Banana ice: Banana Gelada"
+    ],
+    "image": "/v80.jpg",
+    "available": true
+  },
+  {
+    "id": "4",
+    "brand": "IGNITE",
+    "model": "V120",
+    "puffs": "12K",
+    "price": 134.99,
+    "flavors": [
+      "Wartemelon Peach: Melancia Pêssego",
+      "Strawberry Razz: Morango Framboesa",
+      "Blueberry Mint: Mirtilo com Menta"
+    ],
+    "image": "/v120.jpg",
+    "available": true
+  },
+  {
+    "id": "5",
+    "brand": "IGNITE",
+    "model": "V150",
+    "puffs": "15K",
+    "price": 139.99,
+    "flavors": [
+      "Passion Fruit lemon: Maracujá com Limão",
+      "Wartemelon mix: Mix melancia",
+      "Sour Apple Ice: Maça verde",
+      "Green Apple Peach kiwi: Maça pêssego kiwi",
+      "Strawberey kiwi: Morango Kiwi",
+      "Peach Ice: Pessego gelado",
+      "Strawberry Shake: Morango Shake"
+    ],
+    "image": "/v150.jpg",
+    "available": true
+  },
+  {
+    "id": "6",
+    "brand": "IGNITE",
+    "model": "V155",
+    "puffs": "15,5K",
+    "price": 144.99,
+    "flavors": [
+      "Grape ice: Uva Gelada",
+      "Wartemelon Dragon fruit: Melancia pitaya",
+      "menthol: Mentolado",
+      "Wartemelon ice: Melancia gelada",
+      "Strawberey Wartemelon: Morango melancia",
+      "Kiwi Passion Fruit Guava: Kiwi Maracujá Goiaba",
+      "Strawberry banana: Morango Banana",
+      "Strawberry kiwi: Morango Kiwi",
+      "Strawberry ice: Morango gelado",
+      "Pineaple Ice: Abacaxi Gelado"
+    ],
+    "image": "/v155.jpg",
+    "available": true
+  },
+  {
+    "id": "7",
+    "brand": "IGNITE",
+    "model": "V250",
+    "puffs": "25K",
+    "price": 159.99,
+    "flavors": [
+      "BLACK - Watermelon Mix: Mix de Melancias",
+      "ROSE - Wartemelon Dragon Fruit: Melancia Pitaya",
+      "ROSE - Banana coconut water: Banana e água de coco",
+      "Sweet And Sour Pomegranate: Doce Frutado da Romã com Acidez",
+      "Grape Ice: Uva Ice"
+    ],
+    "image": "/v250.jpg",
+    "available": false
+  },
+  {
+    "id": "8",
+    "brand": "IGNITE",
+    "model": "V300",
+    "puffs": "30K",
+    "price": 174.99,
+    "flavors": [
+      "Aloe Grape Ice: Uva gelada",
+      "Banana ice: Banana gelada",
+      "Sweet And sour pomegranate: Frutado de romã azedo",
+      "Strawberry kiwi: Morango kiwi",
+      "Grape Ice: Uva Ice",
+      "Menthol: Mentolado",
+      "Wartemelon Mix: Mix De Melancia",
+      "Strawberry Ice: Morango Gelado",
+      "Wartemelon Ice: Melancia Gelada",
+      "Strawberey Banana: Morango Banana",
+      "Minty melon: Melão Menta"
+    ],
+    "image": "/v300.jpg",
+    "available": true
+  },
+  {
+    "id": "f31t55g5s",
+    "brand": "IGNITE",
+    "model": "V400 ICE",
+    "puffs": "40K",
+    "price": 179.99,
+    "flavors": [
+      "Wartemelon: Melancia",
+      "Pineaple kiwi dragon Fruit: Abacaxi kiwi pitaya",
+      "Tutti Fruit mix: Mix Fruta",
+      "Passion fruit sour kiwi: Maracujá kiwi",
+      "Strawberry Wartemelon: Morango Melancia",
+      "Strawberry: Morango"
+    ],
+    "image": "/v400ice.jpg",
+    "available": true
+  },
+  {
+    "id": "7s4ujp1fr",
+    "brand": "LINHA ELFBAR",
+    "model": "ELFBAR TE30K",
+    "puffs": "30K",
+    "price": 154.99,
+    "flavors": [
+      "Suor lush gami: Bala Azedinha Frutada",
+      "Bubbalo Grape: Chiclete",
+      "Mentol: Mentolado",
+      "Wartemelon lemon ice: Melancia Limão",
+      "Strawberry Ice: Morango gelado",
+      "Strawmelon Peach: Morango Melão pêssego",
+      "Dragon Strawnana: Pitaya Morango banana",
+      "Wartemelon Ice: Melancia Gelado",
+      "Bubbaloo Tutti Frutti: Chiclete Bubbaloo Frutas",
+      "Pineaple ice: Abacaxi Gelado",
+      "Banana coconut ice: Banana Coco ice",
+      "Strawberey Wartemelon Ice: Morango Melancia",
+      "Elf Love: Melancia Melão Refrescante",
+      "Coconut Strawberry ice: Coco morango gelado",
+      "Green Apple Lemon: Maça verde limão"
+    ],
+    "image": "/elfbar30k.jpg",
+    "available": true
+  },
+  {
+    "id": "52dyvc3lm",
+    "brand": "LINHA ELFBAR",
+    "model": "ELFBAR TRIO",
+    "puffs": "40K",
+    "price": 169.99,
+    "flavors": [
+      "Cool Menthol: Mentolado",
+      "Lá Grape: Uva Roxa",
+      "Pineapple Lime: Abacaxi limão",
+      "Black Mint: Menta Black",
+      "Peach Twist: Pêssego",
+      "Wartemelon Ice: Melancia Gelada"
+    ],
+    "image": "/elfbarbartrio.jpg",
+    "available": true
+  },
+  {
+    "id": "elfbar-ice-40k",
+    "brand": "LINHA ELFBAR",
+    "model": "ELFBAR ICE",
+    "puffs": "40K",
+    "price": 169.99,
+    "flavors": [
+      "Strawberry Ice: Morango ice",
+      "Watemelon Ice: Melancia Gelada",
+      "Sour Strawberry dragonfruit: Morango azedo pitaya",
+      "Miami Mint: Menta",
+      "Summer Splash: Explosão refrescante frutas tropicais"
+    ],
+    "image": "/elfbariceking40k.jpg",
+    "available": true
+  },
+  {
+    "id": "7guire3b5",
+    "brand": "LINHA ELFBAR",
+    "model": "ELFBAR BC PRO",
+    "puffs": "45K",
+    "price": 189.99,
+    "flavors": [
+      "Watermelon Ice: Melancia Gelada",
+      "Strawberry Kiwi: Morango com Kiwi",
+      "Mango Magic: Manga Doce Intensa",
+      "Tropical Baja: Mix de Frutas Tropicais"
+    ],
+    "image": "/elfbarcpro45k.jpg",
+    "available": true
+  },
+  {
+    "id": "3rbig5zib",
+    "brand": "LINHA OXBAR",
+    "model": "OXBAR",
+    "puffs": "9,5",
+    "price": 114.99,
+    "flavors": [
+      "Grape Paradise: Uva",
+      "Red Ice: Frutas Vermelhas",
+      "Fanta Grape: Uva Fanta",
+      "Strawberey Banana Ice: Morango Banana ice",
+      "Tropical Love: Frutas Tropical",
+      "Banana Ice: Banana Gelada",
+      "Ox Love: Mistura Frutada Doce",
+      "Double Apple: Dupla maçã",
+      "Kiwi Passion Fruit Guava: Kiwi Maracujá Goiaba",
+      "Tutti Fruitti: frutados doces",
+      "Cola Ice: Cola Gelada",
+      "Wartemelon Ice: Melancia gelada"
+    ],
+    "image": "/oxbar9,5.jpg",
+    "available": true
+  },
+  {
+    "id": "p6azra2lw",
+    "brand": "LINHA OXBAR",
+    "model": "OXBAR",
+    "puffs": "50K",
+    "price": 189.99,
+    "flavors": [
+      "Passionfruit sour kiwi: Maracujá kiwi",
+      "Pineapple kiwi Dragonfruit: Abacaxi Kiwi Pitaya",
+      "Strawberey ice: Morango Gelado",
+      "Grape ice: Uva Gelada",
+      "Strawberey kiwi: Morango kiwi",
+      "Pineaple ice: Abacaxi Gelado",
+      "Mentol: Mentolado",
+      "Wartemelon Ice: Melancia Gelada",
+      "Strawberey grape: Morango Uva",
+      "Icy mint: Menta"
+    ],
+    "image": "/oxbar50k.jpg",
+    "available": true
+  },
+  {
+    "id": "hdrqmxbjw",
+    "brand": "LINHA NIKBAR",
+    "model": "NIKBAR",
+    "puffs": "10K",
+    "price": 109.99,
+    "flavors": [
+      "Cherry Bomb: Explosão de Cereja",
+      "Strawberey raspeberry: Morango Framboesa",
+      "Passion suor kiwi: Maracuja kiwi",
+      "Strawberry kiwi: Morango Kiwi",
+      "Strawberry Ice: Morango Gelado",
+      "Wartemelon Bubblegum: chiclete Melancia",
+      "Aloe grape: Uva",
+      "Strawberey Wartemelon Apple: Morango melancia maçã",
+      "Strawberey Shortcake: Bolo de morango"
+    ],
+    "image": "/nikbar10k.jpg",
+    "available": true
+  },
+  {
+    "id": "9nng9octy",
+    "brand": "LINHA LOST MARY",
+    "model": "LOST MARY",
+    "puffs": "35K",
+    "price": 149.99,
+    "flavors": [
+      "Ice mint: Menta gelada",
+      "Banana ice: banana gelada",
+      "Baja Splash: Cítricos refrescantes",
+      "Mentol: Menta Refrescante",
+      "Suor Apple ice: Maça Verde Azeda",
+      "Strawberry kiwi: Morango Kiwi"
+    ],
+    "image": "/lostmary35k.jpg",
+    "available": true
+  },
+  {
+    "id": "qwgy8avmv",
+    "brand": "LINHA LIF POD",
+    "model": "LIFE POD REFIL",
+    "puffs": "8K",
+    "price": 109.99,
+    "flavors": [
+      "Love 66: Melão Menta Melancia",
+      "Strawberey banana: Morango Banana",
+      "Spearmint: Menta Refrescante",
+      "Cactus: Sabor levemente adocicado refrescante",
+      "Triple Berry: três Frutas vermelhas",
+      "Lemon Grass: Refrescante Cítrico",
+      "Mango ice: Manga Gelada",
+      "Lemon mint: Limão Menta refrescante gelado",
+      "Menthol: Menta",
+      "Coconut Water: Agua De Coco",
+      "Passion Fruit Sour Kiwi: Maracuja kiwi",
+      "Cherry Bomb: Explosao Cereja",
+      "Apple melon ice: Maça melão gelado"
+    ],
+    "image": "/lifepode8k.jpg",
+    "available": true
+  },
+  {
+    "id": "2i5so6krh",
+    "brand": "LINHA LIF POD",
+    "model": "LIFE POD REFIL",
+    "puffs": "10K",
+    "price": 119.99,
+    "flavors": [
+      "Menthol: Menta",
+      "Grape Honeydew: Uva Melão",
+      "Love 66: Melão Menta Melancia",
+      "Monster Drink: Energético",
+      "Dragon fruit ice: Pitaya Gelado",
+      "Clear: Leve Refrescante Mentol",
+      "Mint bublegum: Chiclete De Menta",
+      "Green Grape Ice: Maça Uva gelado",
+      "White Peach Berry: Pêssego Branco",
+      "Banana Custard: Banana Creme"
+    ],
+    "image": "/lifepode10k.jpg",
+    "available": true
+  },
+  {
+    "id": "pgi1jsba5",
+    "brand": "LINHA LIF POD",
+    "model": "KIT LIFE COMPLETO",
+    "puffs": "10K",
+    "price": 169.99,
+    "flavors": [
+      "Mentol: Menta",
+      "Love 66: Melão Menta Melancia",
+      "Banana Custard: Banana Creme",
+      "BlackBerry ice: Frutas Vermelhas Ice",
+      "Grape honeydew: Uva Melão"
+    ],
+    "image": "/kitilifepode10k.jpg",
+    "available": true
+  },
+  {
+    "id": "8o1iqa1d9",
+    "brand": "IGNITE",
+    "model": "V NANO",
+    "puffs": "1K",
+    "price": 79.99,
+    "flavors": [
+      "Cool Mentol: Menta gelada refresca",
+      "Orange Soda: Refrigerante Laranja",
+      "Tropical Fruit: Mix de Frutas Tropical",
+      "Pineaple ice: Abacaxi Gelado",
+      "Cola ice: Cola Refrescante",
+      "Blueberry Raspeberry: Mirtilo Framboesa",
+      "Strawberey Guava Ice: Morango Goiaba",
+      "Cherry Lemonade: Cereja com limão"
+    ],
+    "image": "/vnano.jpg",
+    "available": true
+  },
+  {
+    "id": "edicao-especial",
+    "brand": "EDIÇÃO ESPECIAL",
+    "model": "EDIÇÃO ESPECIAL",
+    "puffs": "N/A",
+    "price": 199.99,
+    "flavors": [
+      "Strawberey Spark: Morango refrescante / Morango com toque cítrico",
+      "Passion Flash: Maracujá intenso / Maracujá vibrante"
+    ],
+    "image": "https://picsum.photos/seed/edicaoespecial/400/400",
+    "available": true
+  },
+  {
+    "id": "lost-mary-20k",
+    "brand": "LINHA LOST MARY",
+    "model": "LOST MARY 20K PRO",
+    "puffs": "20K",
+    "price": 139.99,
+    "flavors": [
+      "Banana ice: Banana Gelada",
+      "Sour Strawberey Dragon: Azedo Morango Pitaya"
+    ],
+    "image": "/lostmary20k.jpg",
+    "available": true
+  },
+  {
+    "id": "oxbar-30k",
+    "brand": "LINHA OXBAR",
+    "model": "OXBAR 30K",
+    "puffs": "30K",
+    "price": 169.99,
+    "flavors": [
+      "Passion kiwi: Maracuja Kiwi",
+      "Red Ice: Frutas Vermelhas Geladas"
+    ],
+    "image": "/oxbar30k.jpg",
+    "available": true
+  },
+  {
+    "id": "nikbar-30k",
+    "brand": "LINHA NIKBAR",
+    "model": "NIKBAR 30K",
+    "puffs": "30K",
+    "price": 159.99,
+    "flavors": [
+      "Strawberry Ice: Morango Gelado",
+      "Fresh mint: Menta fresca"
+    ],
+    "image": "/nikbar30k.jpg",
+    "available": true
+  },
+  {
+    "id": "black-sheep-15k",
+    "brand": "LINHA BLACK SHEEP",
+    "model": "BLACK SHEEP 15K",
+    "puffs": "15K",
+    "price": 129.99,
+    "flavors": [
+      "Mentol: Mentolado",
+      "Mango Peach Wartemelon: Manga Pêssego Melancia"
+    ],
+    "image": "https://picsum.photos/seed/blacksheep15/400/400",
+    "available": true
+  },
+  {
+    "id": "black-sheep-20k",
+    "brand": "LINHA BLACK SHEEP",
+    "model": "BLACK SHEEP 20K Troca Sabor",
+    "puffs": "20K",
+    "price": 149.99,
+    "flavors": [
+      "Grape+Papaya Lemon: Uva + Mamão com Limão",
+      "Wintergreen+ Uva: Wintergreen+Uva"
+    ],
+    "image": "https://picsum.photos/seed/blacksheep20/400/400",
+    "available": true
+  },
+  {
+    "id": "elfbar-bc15k",
+    "brand": "LINHA ELFBAR",
+    "model": "ELFBAR BC15K",
+    "puffs": "15K",
+    "price": 129.99,
+    "flavors": [
+      "Peach mango Wartemelon: pêssego manga melancia",
+      "Blue razz ice: Framboesa Azul Gelada",
+      "Sakura Grape: Uva",
+      "Sour Apple ice: Maça Azeda gelada",
+      "Miami mint: Menta Refrescante",
+      "Pineaple Ice: Abacaxi Gelado",
+      "Banana ice: Banana Gelada",
+      "Icy mint: Menta",
+      "Americano ice: Café Americano gelado",
+      "Bubbaloo Grape: Chiclete bubbalo Uva",
+      "Kiwi Wartemelon Apple: Kiwi melancia maçã",
+      "Strawberry Ice Cream: Morango Gelado",
+      "Pear Wartemelon Dragonfruit: Pera melancia pitaya",
+      "Elf Love: Melancia Melão refrescante",
+      "Wartemelon ice: Melancia Gelado",
+      "Strawberey Ice: Morango Gelado",
+      "Strawberry Kiwi: Morango Kiwi",
+      "Passion fruit Organge Guava: Maracuja laranja goiaba"
+    ],
+    "image": "/elfbarbc15k.jpg",
+    "available": true
+  },
+  {
+    "id": "refil-p100",
+    "brand": "IGNITE",
+    "model": "REFIL P100",
+    "puffs": "N/A",
+    "price": 89.99,
+    "flavors": [
+      "Banana ice: Banana Gelada",
+      "Strawberry Kiwi: Morango Kiwi",
+      "Grape Ice: Uva Gelada",
+      "Green Apple: Maça Verde",
+      "Menthol: Mentolado",
+      "Icy Mint: Menta"
+    ],
+    "image": "/p100.jpg",
+    "available": true
+  },
+  {
+    "id": "elfbar-gh23k",
+    "brand": "LINHA ELFBAR",
+    "model": "ELFBAR GH 23K",
+    "puffs": "23K",
+    "price": 149.99,
+    "flavors": [
+      "Grape Ice: Uva Gelada",
+      "Ice Mint: Menta Ice",
+      "Strawberry Ice: Morango Gelado",
+      "Wartemelon Ice: Melancia Gelada",
+      "Blueberry Ice: Mirtilo Gelado",
+      "Peach Ice: Pêssego Gelado"
+    ],
+    "image": "/elfbargh23.jpg",
+    "available": true
+  }
+]
