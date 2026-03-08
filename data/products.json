@@ -117,13 +117,13 @@
       "Banana ice: Banana gelada",
       "Sweet And sour pomegranate: Frutado de romã azedo",
       "Strawberry kiwi: Morango kiwi",
-      "Grape Ice: Uva Ice",
+      "Grape Ice: Uva Ice ❌",
       "Menthol: Mentolado",
       "Wartemelon Mix: Mix De Melancia",
       "Strawberry Ice: Morango Gelado",
       "Wartemelon Ice: Melancia Gelada",
-      "Strawberey Banana: Morango Banana",
-      "Minty melon: Melão Menta"
+      "Strawberey Banana: Morango Banana ❌",
+      "Minty melon: Melão Menta ❌"
     ],
     "image": "/v300.jpg",
     "available": true
@@ -137,10 +137,10 @@
     "flavors": [
       "Wartemelon: Melancia",
       "Pineaple kiwi dragon Fruit: Abacaxi kiwi pitaya",
-      "Tutti Fruit mix: Mix Fruta",
-      "Passion fruit sour kiwi: Maracujá kiwi",
-      "Strawberry Wartemelon: Morango Melancia",
-      "Strawberry: Morango"
+      "Tutti Fruit mix: Mix Fruta ❌",
+      "Passion fruit sour kiwi: Maracujá kiwi ❌",
+      "Strawberry Wartemelon: Morango Melancia ❌",
+      "Strawberry: Morango ❌"
     ],
     "image": "/v400ice.jpg",
     "available": true
@@ -152,18 +152,18 @@
     "puffs": "30K",
     "price": 154.99,
     "flavors": [
-      "Suor lush gami: Bala Azedinha Frutada",
+      "Suor lush gami: Bala Azedinha Frutada ❌",
       "Bubbalo Grape: Chiclete",
-      "Mentol: Mentolado",
+      "Mentol: Mentolado ❌",
       "Wartemelon lemon ice: Melancia Limão",
       "Strawberry Ice: Morango gelado",
       "Strawmelon Peach: Morango Melão pêssego",
       "Dragon Strawnana: Pitaya Morango banana",
       "Wartemelon Ice: Melancia Gelado",
       "Bubbaloo Tutti Frutti: Chiclete Bubbaloo Frutas",
-      "Pineaple ice: Abacaxi Gelado",
+      "Pineaple ice: Abacaxi Gelado ❌",
       "Banana coconut ice: Banana Coco ice",
-      "Strawberey Wartemelon Ice: Morango Melancia",
+      "Strawberey Wartemelon Ice: Morango Melancia ❌",
       "Elf Love: Melancia Melão Refrescante",
       "Coconut Strawberry ice: Coco morango gelado",
       "Green Apple Lemon: Maça verde limão"
@@ -211,10 +211,10 @@
     "puffs": "45K",
     "price": 189.99,
     "flavors": [
-      "Watermelon Ice: Melancia Gelada",
+      "Watermelon Ice: Melancia Gelada ❌",
       "Strawberry Kiwi: Morango com Kiwi",
-      "Mango Magic: Manga Doce Intensa",
-      "Tropical Baja: Mix de Frutas Tropicais"
+      "Mango Magic: Manga Doce Intensa ❌",
+      "Tropical Baja: Mix de Frutas Tropicais ❌"
     ],
     "image": "/elfbarbcpro45k.jpg",
     "available": true
@@ -230,14 +230,14 @@
       "Red Ice: Frutas Vermelhas",
       "Fanta Grape: Uva Fanta",
       "Strawberey Banana Ice: Morango Banana ice",
-      "Tropical Love: Frutas Tropical",
-      "Banana Ice: Banana Gelada",
-      "Ox Love: Mistura Frutada Doce",
-      "Double Apple: Dupla maçã",
-      "Kiwi Passion Fruit Guava: Kiwi Maracujá Goiaba",
-      "Tutti Fruitti: frutados doces",
-      "Cola Ice: Cola Gelada",
-      "Wartemelon Ice: Melancia gelada"
+      "Tropical Love: Frutas Tropical ❌",
+      "Banana Ice: Banana Gelada ❌",
+      "Ox Love: Mistura Frutada Doce ❌",
+      "Double Apple: Dupla maçã ❌",
+      "Kiwi Passion Fruit Guava: Kiwi Maracujá Goiaba ❌",
+      "Tutti Fruitti: frutados doces ❌",
+      "Cola Ice: Cola Gelada ❌",
+      "Wartemelon Ice: Melancia gelada ❌"
     ],
     "image": "/oxbar9,5.jpg",
     "available": true
@@ -249,7 +249,7 @@
     "puffs": "50K",
     "price": 189.99,
     "flavors": [
-      "Passionfruit sour kiwi: Maracujá kiwi",
+      "Passionfruit sour kiwi: Maracujá kiwi ❌",
       "Pineapple kiwi Dragonfruit: Abacaxi Kiwi Pitaya",
       "Strawberey ice: Morango Gelado",
       "Grape ice: Uva Gelada",
@@ -274,7 +274,7 @@
       "Strawberey raspeberry: Morango Framboesa",
       "Passion suor kiwi: Maracuja kiwi",
       "Strawberry kiwi: Morango Kiwi",
-      "Strawberry Ice: Morango Gelado",
+      "Strawberry Ice: Morango Gelado ❌",
       "Wartemelon Bubblegum: chiclete Melancia",
       "Aloe grape: Uva",
       "Strawberey Wartemelon Apple: Morango melancia maçã",
@@ -290,12 +290,12 @@
     "puffs": "35K",
     "price": 149.99,
     "flavors": [
-      "Ice mint: Menta gelada",
-      "Banana ice: banana gelada",
-      "Baja Splash: Cítricos refrescantes",
-      "Mentol: Menta Refrescante",
+      "Ice mint: Menta gelada ❌",
+      "Banana ice: banana gelada ❌",
+      "Baja Splash: Cítricos refrescantes ❌",
+      "Mentol: Menta Refrescante ❌",
       "Suor Apple ice: Maça Verde Azeda",
-      "Strawberry kiwi: Morango Kiwi"
+      "Strawberry kiwi: Morango Kiwi ❌"
     ],
     "image": "/lostmary35k.jpg",
     "available": true
@@ -476,8 +476,8 @@
       "Ice Mint: Menta Ice",
       "Strawberry Ice: Morango Gelado",
       "Wartemelon Ice: Melancia Gelada",
-      "Blueberry Ice: Mirtilo Gelado",
-      "Peach Ice: Pêssego Gelado"
+      "Blueberry Ice: Mirtilo Gelado ❌",
+      "Peach Ice: Pêssego Gelado ❌"
     ],
     "image": "/elfbargh23.jpg",
     "available": true

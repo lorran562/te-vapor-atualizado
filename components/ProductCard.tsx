@@ -20,7 +20,10 @@ interface ProductProps {
 
 export default function ProductCard({ brand, model, flavors, price, puffs, image, available = true, onBuy }: ProductProps) {
   const getFlavorName = (f: string | Flavor) => typeof f === 'string' ? f : f.name;
-  const isFlavorAvailable = (f: string | Flavor) => typeof f === 'string' ? true : f.available;
+  const isFlavorAvailable = (f: string | Flavor) => {
+    if (typeof f === 'string') return !f.endsWith(' ❌');
+    return f.available;
+  };
 
   const initialFlavor = flavors.find(f => isFlavorAvailable(f)) || flavors[0];
   const [selectedFlavor, setSelectedFlavor] = useState<string>(initialFlavor ? getFlavorName(initialFlavor) : '');
