@@ -1,20 +1,5 @@
 [
   {
-    "id": "1",
-    "brand": "IGNITE",
-    "model": "V50",
-    "puffs": "5K",
-    "price": 99.99,
-    "flavors": [
-      "Morango Ice",
-      "Uva Gelada",
-      "Melancia",
-      "Menta"
-    ],
-    "image": "https://picsum.photos/seed/v50/400/400",
-    "available": false
-  },
-  {
     "id": "2",
     "brand": "IGNITE",
     "model": "V55",
@@ -396,19 +381,6 @@
     "available": true
   },
   {
-    "id": "edicao-especial",
-    "brand": "EDIÇÃO ESPECIAL",
-    "model": "EDIÇÃO ESPECIAL",
-    "puffs": "N/A",
-    "price": 199.99,
-    "flavors": [
-      "Strawberey Spark: Morango refrescante / Morango com toque cítrico",
-      "Passion Flash: Maracujá intenso / Maracujá vibrante"
-    ],
-    "image": "https://picsum.photos/seed/edicaoespecial/400/400",
-    "available": true
-  },
-  {
     "id": "lost-mary-20k",
     "brand": "LINHA LOST MARY",
     "model": "LOST MARY 20K PRO",
@@ -445,32 +417,6 @@
       "Fresh mint: Menta fresca"
     ],
     "image": "/nikbar30k.jpg",
-    "available": true
-  },
-  {
-    "id": "black-sheep-15k",
-    "brand": "LINHA BLACK SHEEP",
-    "model": "BLACK SHEEP 15K",
-    "puffs": "15K",
-    "price": 129.99,
-    "flavors": [
-      "Mentol: Mentolado",
-      "Mango Peach Wartemelon: Manga Pêssego Melancia"
-    ],
-    "image": "https://picsum.photos/seed/blacksheep15/400/400",
-    "available": true
-  },
-  {
-    "id": "black-sheep-20k",
-    "brand": "LINHA BLACK SHEEP",
-    "model": "BLACK SHEEP 20K Troca Sabor",
-    "puffs": "20K",
-    "price": 149.99,
-    "flavors": [
-      "Grape+Papaya Lemon: Uva + Mamão com Limão",
-      "Wintergreen+ Uva: Wintergreen+Uva"
-    ],
-    "image": "https://picsum.photos/seed/blacksheep20/400/400",
     "available": true
   },
   {
