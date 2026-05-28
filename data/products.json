@@ -274,7 +274,7 @@
       },
       {
         "name": "Mentol: Mentolado",
-        "available": true
+        "available": false
       },
       {
         "name": "Icy mint : MENTA GELADO",
@@ -286,7 +286,7 @@
       },
       {
         "name": "Strawberry ice : Morango Gelado ",
-        "available": true
+        "available": false
       },
       {
         "name": "Peach mango: Pêssego Manga ",
@@ -373,7 +373,7 @@
     "flavors": [
       {
         "name": "Watermelon: Melancia",
-        "available": false
+        "available": true
       },
       {
         "name": "Pineaple kiwi dragon Fruit: Abacaxi kiwi pitaya",
@@ -389,7 +389,7 @@
       },
       {
         "name": "Strawberry aple Wartemelon: Morango maca Melancia ",
-        "available": false
+        "available": true
       },
       {
         "name": "Mentol: Mentolado",
@@ -401,11 +401,11 @@
       },
       {
         "name": "Tutti fruit mix : ",
-        "available": false
+        "available": true
       },
       {
         "name": "Strawberry: morango ",
-        "available": false
+        "available": true
       },
       {
         "name": "Strawberry Apple watermelon : morango maçã melancia ",
@@ -417,7 +417,7 @@
       },
       {
         "name": "Strawberry kiwi: morango kiwi ",
-        "available": false
+        "available": true
       },
       {
         "name": "Strawberry banana ice : morango banana gelado ",
@@ -429,7 +429,7 @@
       },
       {
         "name": "Strawberry : MORANGO",
-        "available": false
+        "available": true
       },
       {
         "name": "Passion fruit suor kiwi",
@@ -1353,7 +1353,7 @@
       },
       {
         "name": "Kiwi passion fruit guava",
-        "available": true
+        "available": false
       }
     ],
     "image": "/elfbarbc15k.jpg",
@@ -1454,7 +1454,7 @@
     "flavors": [
       {
         "name": "watermelon  ice ; MELANCIA ICE",
-        "available": true
+        "available": false
       },
       {
         "name": "pineapple strawberry banana ; ABACAXI MORANGO BANANA",
@@ -1486,14 +1486,14 @@
       },
       {
         "name": "Green Apple ice ",
-        "available": true
+        "available": false
       },
       {
         "name": "Blue raz ice",
-        "available": true
+        "available": false
       }
     ],
-    "image": "elfbarbc10k.jpg",
+    "image": "",
     "available": true,
     "puffs": "10K"
   },
@@ -1579,7 +1579,7 @@
       },
       {
         "name": "Mango ice: manga gelada",
-        "available": true
+        "available": false
       },
       {
         "name": "Watermelon mint: melancia menta ",
