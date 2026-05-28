@@ -30,16 +30,36 @@ export default function CheckoutModal({ isOpen, onClose, product }: CheckoutModa
 
   if (!product) return null;
 
+  const DELIVERY_FEE = 8;
+  const CARD_FEES: Record<string, number> = {
+    'Crédito': 0.0386,
+    'Débito': 0.0169,
+  };
+
+  const subtotal = product.price || 0;
+  const cardFeeRate = CARD_FEES[formData.paymentMethod] ?? 0;
+  const cardFee = subtotal * cardFeeRate;
+  const total = subtotal + cardFee + DELIVERY_FEE;
+
+  const brl = (v: number) => `R$ ${v.toFixed(2).replace('.', ',')}`;
+
   const handleConfirm = () => {
     if (!formData.name || !formData.whatsapp || !formData.address || !formData.paymentMethod) {
       alert('Por favor, preencha todos os campos.');
       return;
     }
 
+    const cardFeeLine = cardFee > 0
+      ? `*Taxa ${formData.paymentMethod} (${(cardFeeRate * 100).toFixed(2).replace('.', ',')}%):* ${brl(cardFee)}%0A`
+      : '';
+
     const message = `*Novo Pedido - T7 VAPOR*%0A%0A` +
       `*Produto:* ${product.brand} ${product.model}%0A` +
       `*Sabor:* ${product.selectedFlavor}%0A` +
-      `*Preço:* R$ ${(product.price || 0).toFixed(2).replace('.', ',')}%0A%0A` +
+      `*Subtotal:* ${brl(subtotal)}%0A` +
+      cardFeeLine +
+      `*Taxa de Entrega:* ${brl(DELIVERY_FEE)}%0A` +
+      `*TOTAL:* ${brl(total)}%0A%0A` +
       `*Dados do Cliente:*%0A` +
       `*Nome:* ${formData.name}%0A` +
       `*WhatsApp:* ${formData.whatsapp}%0A` +
@@ -162,6 +182,26 @@ export default function CheckoutModal({ isOpen, onClose, product }: CheckoutModa
               </div>
 
               <div className="pt-4 space-y-3">
+                <div className="rounded-2xl bg-zinc-900/50 border border-white/5 p-4 space-y-2 text-sm">
+                  <div className="flex justify-between text-zinc-400">
+                    <span>Subtotal</span>
+                    <span className="text-white">{brl(subtotal)}</span>
+                  </div>
+                  {cardFee > 0 && (
+                    <div className="flex justify-between text-zinc-400">
+                      <span>Taxa {formData.paymentMethod} ({(cardFeeRate * 100).toFixed(2).replace('.', ',')}%)</span>
+                      <span className="text-white">{brl(cardFee)}</span>
+                    </div>
+                  )}
+                  <div className="flex justify-between text-zinc-400">
+                    <span>Taxa de entrega</span>
+                    <span className="text-white">{brl(DELIVERY_FEE)}</span>
+                  </div>
+                  <div className="border-t border-white/5 pt-2 flex justify-between items-center">
+                    <span className="text-xs font-bold uppercase tracking-widest text-zinc-400">Total</span>
+                    <span className="text-xl font-black text-primary">{brl(total)}</span>
+                  </div>
+                </div>
                 <div className="rounded-xl bg-emerald-500/5 border border-emerald-500/20 p-3 text-center">
                   <p className="text-[10px] font-bold text-emerald-500 uppercase tracking-widest">Entrega rápida após confirmação do pagamento</p>
                 </div>
