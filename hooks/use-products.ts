@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import initialProducts from '@/data/products.json';
-import { supabase } from '@/lib/supabase';
+import { supabase, isSupabaseConfigured } from '@/lib/supabase';
 
 export interface Flavor {
   name: string;
@@ -20,6 +20,8 @@ export interface Product {
   available?: boolean;
 }
 
+const TABLE = 't7_products';
+const BUCKET = 't7-products';
 const DEFAULT_PRODUCTS: Product[] = initialProducts as Product[];
 
 export function useProducts() {
@@ -30,33 +32,26 @@ export function useProducts() {
   const loadProducts = async () => {
     try {
       setIsLoading(true);
-      
-      // Try Supabase first
-      const { data, error } = await supabase
-        .from('products')
-        .select('*')
-        .order('brand', { ascending: true });
 
-      if (!error && data && data.length > 0) {
-        // Map flavors back to the expected format if needed
-        const mappedData = data.map(p => ({
-          ...p,
-          flavors: typeof p.flavors === 'string' ? JSON.parse(p.flavors) : p.flavors
-        }));
-        setProducts(mappedData);
+      if (!isSupabaseConfigured) {
+        setProducts(DEFAULT_PRODUCTS);
         return;
       }
 
-      // Fallback to API/Local
-      const response = await fetch('/api/products');
-      if (response.ok) {
-        const data = await response.json();
-        setProducts(data);
-      } else {
+      const { data, error } = await supabase
+        .from(TABLE)
+        .select('*')
+        .order('brand', { ascending: true });
+
+      if (error) {
+        console.error('Erro lendo Supabase:', error);
         setProducts(DEFAULT_PRODUCTS);
+        return;
       }
+
+      setProducts((data ?? []) as Product[]);
     } catch (error) {
-      console.error('Error fetching products:', error);
+      console.error('Erro inesperado lendo produtos:', error);
       setProducts(DEFAULT_PRODUCTS);
     } finally {
       setIsLoading(false);
@@ -68,73 +63,73 @@ export function useProducts() {
   }, []);
 
   const uploadImage = async (file: File): Promise<string | null> => {
+    if (!isSupabaseConfigured) {
+      alert('Supabase não está configurado. Defina NEXT_PUBLIC_SUPABASE_URL e NEXT_PUBLIC_SUPABASE_ANON_KEY.');
+      return null;
+    }
     try {
-      const fileExt = file.name.split('.').pop();
-      const fileName = `${Math.random().toString(36).substring(2)}.${fileExt}`;
-      const filePath = `product-images/${fileName}`;
+      const fileExt = (file.name.split('.').pop() || 'jpg').toLowerCase();
+      const fileName = `${Date.now()}-${Math.random().toString(36).substring(2)}.${fileExt}`;
 
       const { error: uploadError } = await supabase.storage
-        .from('products')
-        .upload(filePath, file);
+        .from(BUCKET)
+        .upload(fileName, file, { contentType: file.type || 'image/jpeg', upsert: false });
 
       if (uploadError) {
-        throw uploadError;
+        console.error('Erro upload Supabase:', uploadError);
+        alert(`Erro no upload: ${uploadError.message}`);
+        return null;
       }
 
-      const { data } = supabase.storage
-        .from('products')
-        .getPublicUrl(filePath);
-
+      const { data } = supabase.storage.from(BUCKET).getPublicUrl(fileName);
       return data.publicUrl;
-    } catch (error) {
-      console.error('Error uploading image:', error);
+    } catch (error: any) {
+      console.error('Erro upload:', error);
+      alert(`Erro no upload: ${error?.message || error}`);
       return null;
     }
   };
 
   const saveProducts = async (newProducts: Product[]) => {
-    try {
-      setIsSaving(true);
-      
-      // Update local state
-      setProducts(newProducts);
+    if (!isSupabaseConfigured) {
+      alert('Supabase não está configurado. Não é possível salvar.');
+      throw new Error('Supabase não configurado');
+    }
 
-      // Prepare data for Supabase
-      const supabaseData = newProducts.map(p => ({
+    setIsSaving(true);
+    try {
+      const previousIds = products.map(p => p.id);
+      const currentIds = new Set(newProducts.map(p => p.id));
+      const removedIds = previousIds.filter(id => !currentIds.has(id));
+
+      const payload = newProducts.map(p => ({
         id: p.id,
         brand: p.brand,
         model: p.model,
-        puffs: p.puffs,
+        puffs: p.puffs ?? null,
         price: p.price,
-        flavors: JSON.stringify(p.flavors),
-        image: p.image,
-        available: p.available !== false
+        flavors: p.flavors ?? [],
+        image: p.image ?? '',
+        available: p.available !== false,
       }));
 
-      // Try saving to Supabase
-      const { error } = await supabase
-        .from('products')
-        .upsert(supabaseData);
+      const { error: upsertError } = await supabase.from(TABLE).upsert(payload, { onConflict: 'id' });
+      if (upsertError) {
+        console.error('Erro salvando produtos:', upsertError);
+        alert(`Erro ao salvar: ${upsertError.message}`);
+        throw upsertError;
+      }
 
-      if (error) {
-        console.warn('Supabase save failed, falling back to local API:', error);
-        
-        // Fallback to local API
-        const response = await fetch('/api/products', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(newProducts),
-        });
-
-        if (!response.ok) {
-          throw new Error('Failed to save to both Supabase and local API');
+      if (removedIds.length > 0) {
+        const { error: deleteError } = await supabase.from(TABLE).delete().in('id', removedIds);
+        if (deleteError) {
+          console.error('Erro removendo produtos:', deleteError);
+          alert(`Erro ao remover: ${deleteError.message}`);
+          throw deleteError;
         }
       }
 
-      localStorage.setItem('t7_products', JSON.stringify(newProducts));
-    } catch (error: any) {
-      console.error('Error saving products:', error);
-      alert(`Erro ao salvar: ${error.message}`);
+      setProducts(newProducts);
     } finally {
       setIsSaving(false);
     }
