@@ -99,7 +99,7 @@
       },
       {
         "name": "Arctic gum : Chiclete Menta Gelado",
-        "available": true
+        "available": false
       },
       {
         "name": "Strawberry kiwi: Morango e kiwi",
@@ -861,7 +861,10 @@
     "puffs": "50K",
     "price": 189.99,
     "flavors": [
-      "Pineapple kiwi Dragonfruit: Abacaxi Kiwi Pitaya",
+      {
+        "name": "Pineapple kiwi Dragonfruit: Abacaxi Kiwi Pitaya",
+        "available": false
+      },
       {
         "name": "Strawberry ice: Morango Gelado",
         "available": true
@@ -920,7 +923,7 @@
       },
       {
         "name": "Strawberry kiwi: morango kiwi",
-        "available": true
+        "available": false
       },
       {
         "name": "Watermelon Bubblegum: chiclete Melancia",
@@ -940,7 +943,7 @@
       },
       {
         "name": "menthol ; mentolado",
-        "available": true
+        "available": false
       },
       {
         "name": "grape apple ice ; uvã maça gelada",
@@ -1183,11 +1186,11 @@
       },
       {
         "name": "Blue raspberry lemon: Framboesa limão ",
-        "available": true
+        "available": false
       },
       {
         "name": "Ox love: Frutas Vermelhas ",
-        "available": true
+        "available": false
       },
       {
         "name": "Strawberry watermelon :morango melancia ",
@@ -1218,7 +1221,7 @@
       },
       {
         "name": "Fresh mint: Menta fresca",
-        "available": false
+        "available": true
       },
       {
         "name": "blueberry ice: Mirtilo gelado",
