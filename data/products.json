@@ -955,7 +955,7 @@
       },
       {
         "name": "Icy mint: menta gelada",
-        "available": true
+        "available": false
       },
       {
         "name": "Watermelon ice: melancia gelada",
@@ -1400,7 +1400,10 @@
         "name": "Peach Mango Watermelon: Pêssego Manga Melancia",
         "available": false
       },
-      "Strawberry Banana: Morango Banana",
+      {
+        "name": "Strawberry Banana: Morango Banana",
+        "available": false
+      },
       {
         "name": "Kiwi dragon fruit : ",
         "available": true
@@ -1419,7 +1422,7 @@
       },
       {
         "name": "Ice mint: menta gelada",
-        "available": true
+        "available": false
       }
     ],
     "image": "/elfbargh23.jpg",
