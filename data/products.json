@@ -20,7 +20,7 @@
       },
       {
         "name": "Grape ice: Uva gelada",
-        "available": true
+        "available": false
       },
       {
         "name": "Miami mint: Menta Fresca",
@@ -911,7 +911,7 @@
     "flavors": [
       {
         "name": "Cherry watermelon : cereja melancia ",
-        "available": false
+        "available": true
       },
       {
         "name": "Strawberry raspberry: morango framboesa",
@@ -919,7 +919,7 @@
       },
       {
         "name": "Passion sour kiwi: maracuja kiwi",
-        "available": false
+        "available": true
       },
       {
         "name": "Strawberry kiwi: morango kiwi",
@@ -959,7 +959,7 @@
       },
       {
         "name": "Watermelon ice: melancia gelada",
-        "available": true
+        "available": false
       },
       {
         "name": "Strawberry ice: morango gelado ",
@@ -1150,7 +1150,10 @@
     "puffs": "1K",
     "price": 59.99,
     "flavors": [
-      "Tropical Fruit: Mix de Frutas Tropical",
+      {
+        "name": "Tropical Fruit: Mix de Frutas Tropical",
+        "available": false
+      },
       "Orange Soda: Refrigerante Laranja",
       "Cool Mentol: Menta gelada refresca",
       "Cherry Lemonade: Cereja com limão",
@@ -1461,7 +1464,7 @@
       },
       {
         "name": "pineapple strawberry banana ; ABACAXI MORANGO BANANA",
-        "available": true
+        "available": false
       },
       {
         "name": "strawberry ice ; MORANGO ICE ",
@@ -1469,7 +1472,7 @@
       },
       {
         "name": "pineaple ice ; ABACAXI ICE",
-        "available": true
+        "available": false
       },
       {
         "name": "miami mint ; HORTELA",
@@ -1508,7 +1511,7 @@
     "flavors": [
       {
         "name": "strawberry kiwi; morango kiwi",
-        "available": true
+        "available": false
       },
       {
         "name": "tropical bomb",
@@ -1524,11 +1527,11 @@
       },
       {
         "name": "grape mojo",
-        "available": true
+        "available": false
       },
       {
         "name": "watermelon ice; melancia ice",
-        "available": true
+        "available": false
       }
     ],
     "image": "spere.jpg",
@@ -1617,15 +1620,15 @@
     "flavors": [
       {
         "name": "grape+grape mango ; UVA + UVA MANGA",
-        "available": true
+        "available": false
       },
       {
         "name": "grape blueberry + cherry berry ; UVA BLUEBERRY + CEREJA",
-        "available": true
+        "available": false
       },
       {
         "name": "grape + passion fruit  ; UVA + MARACUJA",
-        "available": true
+        "available": false
       },
       {
         "name": "grape mango + fresh mint ; UVA MANGA + HORTELA FRESCA",
@@ -1633,7 +1636,7 @@
       },
       {
         "name": "grape +grape : UVA",
-        "available": true
+        "available": false
       },
       {
         "name": "fresh mint + mango orange ; HORTELA FRESCA +MANGA LARANJA ",
