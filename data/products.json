@@ -373,7 +373,7 @@
     "flavors": [
       {
         "name": "Watermelon: Melancia",
-        "available": true
+        "available": false
       },
       {
         "name": "Pineaple kiwi dragon Fruit: Abacaxi kiwi pitaya",
@@ -947,7 +947,7 @@
       },
       {
         "name": "grape apple ice ; uvã maça gelada",
-        "available": false
+        "available": true
       },
       {
         "name": "Green Apple : maçã dupla",
@@ -971,7 +971,7 @@
       },
       {
         "name": "Miami mint : menta refrescante ",
-        "available": true
+        "available": false
       },
       {
         "name": "Pineaple ice: abacaxi gelado ",
@@ -1518,7 +1518,7 @@
       },
       {
         "name": "tropical bomb",
-        "available": true
+        "available": false
       },
       {
         "name": "fresh splash",
@@ -1553,7 +1553,7 @@
       },
       {
         "name": "Menthol",
-        "available": true
+        "available": false
       },
       {
         "name": "Summer orange ",
@@ -1561,7 +1561,7 @@
       },
       {
         "name": "Mango ice",
-        "available": true
+        "available": false
       },
       {
         "name": "Grapefruit passion guava ",
@@ -1569,7 +1569,7 @@
       },
       {
         "name": "Pineaple ice",
-        "available": true
+        "available": false
       }
     ],
     "image": "lostmarydura.jpg",
