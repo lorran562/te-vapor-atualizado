@@ -28,7 +28,7 @@
       },
       {
         "name": "icy mint: Menta Gelada",
-        "available": true
+        "available": false
       },
       {
         "name": "straberry banana: Morango Banana",
@@ -71,7 +71,7 @@
       },
       {
         "name": "Watermelon ice: Melancia Ice",
-        "available": true
+        "available": false
       },
       {
         "name": "Strawberry Ice: Morango Ice",
@@ -99,7 +99,7 @@
       },
       {
         "name": "Arctic gum : Chiclete Menta Gelado",
-        "available": false
+        "available": true
       },
       {
         "name": "Strawberry kiwi: Morango e kiwi",
@@ -174,7 +174,7 @@
       }
     ],
     "image": "/v150.jpg",
-    "available": true
+    "available": false
   },
   {
     "id": "6",
@@ -468,7 +468,7 @@
       },
       {
         "name": "Grape pop+peach ice ",
-        "available": true
+        "available": false
       },
       {
         "name": "Orange ice+strawberry ice ",
@@ -566,7 +566,7 @@
       },
       {
         "name": "Watermelon Ice: Melancia Gelado",
-        "available": true
+        "available": false
       },
       {
         "name": "Bubbaloo Tutti Frutti: Chiclete Bubbaloo Frutas",
@@ -588,7 +588,7 @@
       },
       {
         "name": "Mentol: Mentolado",
-        "available": true
+        "available": false
       },
       {
         "name": "Strawberry watermelon ice : morango e melancia gelado",
@@ -1363,7 +1363,7 @@
       }
     ],
     "image": "/elfbarbc15k.jpg",
-    "available": true
+    "available": false
   },
   {
     "id": "elfbar-gh23k",
@@ -1655,22 +1655,42 @@
     "puffs": "40K"
   },
   {
-    "id": "669z0bxa1",
-    "brand": "SEXADDICT",
-    "model": "SEXADDICT 28K",
-    "price": 165,
+    "id": "p0pyq3fqj",
+    "brand": "IGNITE",
+    "model": "INGNITE FROZEN 20K",
+    "price": 150,
     "flavors": [
       {
-        "name": "strawberry watermelon: morango melancia",
+        "name": "Watermelon ice : melancia",
         "available": true
       },
       {
-        "name": "icy mint: menta gelada",
+        "name": "Icy mint: menta gelada",
+        "available": true
+      },
+      {
+        "name": "Grape ice: uva gelada ",
+        "available": true
+      },
+      {
+        "name": "Menthol: menta refrescante",
+        "available": true
+      },
+      {
+        "name": "Strawberry kiwi: morango kiwi",
+        "available": true
+      },
+      {
+        "name": "Strawberry ice:morango",
+        "available": true
+      },
+      {
+        "name": "Pineaple ice:abacaxi gelado",
         "available": true
       }
     ],
-    "image": "sexaddict28k.jpg",
+    "image": "",
     "available": true,
-    "puffs": "28K"
+    "puffs": "20K"
   }
 ]
