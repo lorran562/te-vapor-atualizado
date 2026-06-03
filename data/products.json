@@ -1014,9 +1014,12 @@
       },
       {
         "name": "Lemon Grass: Refrescante Cítrico",
-        "available": true
+        "available": false
       },
-      "Cactus: Sabor levemente adocicado refrescante",
+      {
+        "name": "Cactus: Sabor levemente adocicado refrescante",
+        "available": false
+      },
       {
         "name": "Spearmint: Menta Refrescante",
         "available": false
@@ -1070,7 +1073,7 @@
       },
       {
         "name": "Monster Drink: Energético",
-        "available": true
+        "available": false
       },
       {
         "name": "Grape ice: Uva gelada",
@@ -1082,7 +1085,7 @@
       },
       {
         "name": "Blue Passion Mint: Mirtilo Maracujá Menta",
-        "available": true
+        "available": false
       },
       {
         "name": "Love66 :Menta melão melancia ",
@@ -1697,7 +1700,7 @@
     "id": "4g690h504",
     "brand": "SEX ADDICT",
     "model": "SEX ADDICT 28K",
-    "price": 0,
+    "price": 165,
     "flavors": [
       {
         "name": "Strawberry watermelon ice: morango melancia gelada ",
