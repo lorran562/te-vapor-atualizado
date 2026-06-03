@@ -75,7 +75,7 @@
       },
       {
         "name": "Strawberry Ice: Morango Ice",
-        "available": true
+        "available": false
       },
       {
         "name": "Passion Fruit Sour Kiwi: Maracujá Kiwi",
@@ -1224,7 +1224,7 @@
       },
       {
         "name": "Fresh mint: Menta fresca",
-        "available": true
+        "available": false
       },
       {
         "name": "blueberry ice: Mirtilo gelado",
@@ -1240,7 +1240,7 @@
       },
       {
         "name": "menthol: Mentolado",
-        "available": true
+        "available": false
       },
       {
         "name": "watermelon cherry: Melancia Cereja",
@@ -1503,7 +1503,7 @@
       }
     ],
     "image": "elfbarbc10k.jpg",
-    "available": true,
+    "available": false,
     "puffs": "10K"
   },
   {
@@ -1692,5 +1692,24 @@
     "image": "ignitefrozen.jpg",
     "available": true,
     "puffs": "20K"
+  },
+  {
+    "id": "4g690h504",
+    "brand": "SEX ADDICT",
+    "model": "SEX ADDICT 28K",
+    "price": 0,
+    "flavors": [
+      {
+        "name": "Strawberry watermelon ice: morango melancia gelada ",
+        "available": true
+      },
+      {
+        "name": "Icy mint: menta gelada",
+        "available": true
+      }
+    ],
+    "image": "sexaddict28k.jpg",
+    "available": true,
+    "puffs": "28k"
   }
 ]
