@@ -325,7 +325,7 @@
       },
       {
         "name": "Menthol: Mentolado",
-        "available": true
+        "available": false
       },
       "Watermelon Mix: Mix De Melancia",
       {
@@ -535,7 +535,7 @@
       }
     ],
     "image": "/v400sweet.jpg",
-    "available": true
+    "available": false
   },
   {
     "id": "7s4ujp1fr",
@@ -919,7 +919,7 @@
       },
       {
         "name": "Passion sour kiwi: maracuja kiwi",
-        "available": true
+        "available": false
       },
       {
         "name": "Strawberry kiwi: morango kiwi",
@@ -947,7 +947,7 @@
       },
       {
         "name": "grape apple ice ; uvã maça gelada",
-        "available": true
+        "available": false
       },
       {
         "name": "Green Apple : maçã dupla",
@@ -1541,7 +1541,7 @@
       }
     ],
     "image": "spere.jpg",
-    "available": true,
+    "available": false,
     "puffs": "40k"
   },
   {
