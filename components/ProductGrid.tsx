@@ -15,7 +15,8 @@ export default function ProductGrid() {
     setIsModalOpen(true);
   };
 
-  const brands = Array.from(new Set(products.map(p => p.brand)));
+  const availableProducts = products.filter(p => p.available !== false);
+  const brands = Array.from(new Set(availableProducts.map(p => p.brand)));
 
   if (isLoading) {
     return (
@@ -41,12 +42,12 @@ export default function ProductGrid() {
             <div className="mb-8 flex items-center justify-between border-b border-white/5 pb-4">
               <h3 className="text-sm font-black text-primary uppercase tracking-widest">{brand}</h3>
               <span className="text-xs text-zinc-500">
-                {products.filter(p => p.brand === brand).length} produtos
+                {availableProducts.filter(p => p.brand === brand).length} produtos
               </span>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {products
+              {availableProducts
                 .filter(p => p.brand === brand)
                 .map((product) => (
                   <ProductCard 
