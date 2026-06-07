@@ -52,7 +52,7 @@
       }
     ],
     "image": "/v55.jpg",
-    "available": true
+    "available": false
   },
   {
     "id": "3",
@@ -87,7 +87,7 @@
       },
       {
         "name": "Mentol: Menta Hortelã Ice",
-        "available": true
+        "available": false
       },
       {
         "name": "Green Apple : MAÇÃ VERDE",
@@ -389,7 +389,7 @@
       },
       {
         "name": "Strawberry aple Wartemelon: Morango maca Melancia ",
-        "available": true
+        "available": false
       },
       {
         "name": "Mentol: Mentolado",
@@ -429,11 +429,11 @@
       },
       {
         "name": "Strawberry : MORANGO",
-        "available": true
+        "available": false
       },
       {
         "name": "Passion fruit suor kiwi",
-        "available": true
+        "available": false
       }
     ],
     "image": "/v400ice.jpg",
@@ -581,7 +581,10 @@
         "name": "Coconut Strawberry ice: Coco morango gelado",
         "available": false
       },
-      "Green Apple Lemon: Maça verde limão",
+      {
+        "name": "Green Apple Lemon: Maça verde limão",
+        "available": false
+      },
       {
         "name": "Berry Watermelon: Frutas vermelhas melancia",
         "available": false
@@ -592,7 +595,7 @@
       },
       {
         "name": "Strawberry watermelon ice : morango e melancia gelado",
-        "available": true
+        "available": false
       },
       {
         "name": "Suor lush gami:",
@@ -620,7 +623,7 @@
       },
       {
         "name": "Peniaple mango : abacaxi manga",
-        "available": true
+        "available": false
       },
       {
         "name": "Peach mango watermelon : pecego manga melancia ",
@@ -694,7 +697,7 @@
     "flavors": [
       {
         "name": "Strawberry Ice: Morango ice",
-        "available": true
+        "available": false
       },
       {
         "name": "Watermelon Ice: Melancia Gelada",
@@ -706,7 +709,7 @@
       },
       {
         "name": "Miami Mint: Menta",
-        "available": true
+        "available": false
       },
       {
         "name": "Summer Splash: Explosão refrescante frutas tropicais",
@@ -871,7 +874,7 @@
       },
       {
         "name": "Grape ice: Uva Gelada",
-        "available": true
+        "available": false
       },
       "Strawberry kiwi: Morango kiwi",
       {
@@ -927,7 +930,7 @@
       },
       {
         "name": "Watermelon Bubblegum: chiclete Melancia",
-        "available": false
+        "available": true
       },
       {
         "name": "Aloe grape: uva",
@@ -963,11 +966,11 @@
       },
       {
         "name": "Strawberry ice: morango gelado ",
-        "available": true
+        "available": false
       },
       {
         "name": "Strawberry banana : morango banana ",
-        "available": true
+        "available": false
       },
       {
         "name": "Miami mint : menta refrescante ",
@@ -979,7 +982,7 @@
       },
       {
         "name": "Passion suor kiwi:",
-        "available": true
+        "available": false
       },
       {
         "name": "Blueberry ice: mertilo gelado ",
@@ -987,6 +990,10 @@
       },
       {
         "name": "Watermelon suor ",
+        "available": true
+      },
+      {
+        "name": "Grape ice: uva gelada ",
         "available": true
       }
     ],
@@ -1054,7 +1061,7 @@
       }
     ],
     "image": "/lifepode8k.jpg",
-    "available": true
+    "available": false
   },
   {
     "id": "2i5so6krh",
@@ -1077,7 +1084,7 @@
       },
       {
         "name": "Grape ice: Uva gelada",
-        "available": true
+        "available": false
       },
       {
         "name": "Mentol: Mentolado",
@@ -1089,7 +1096,7 @@
       },
       {
         "name": "Love66 :Menta melão melancia ",
-        "available": true
+        "available": false
       },
       {
         "name": "Polar ice: mentolado forte ",
@@ -1144,7 +1151,7 @@
       }
     ],
     "image": "/kitilifepode10k.jpg",
-    "available": true
+    "available": false
   },
   {
     "id": "8o1iqa1d9",
@@ -1157,16 +1164,31 @@
         "name": "Tropical Fruit: Mix de Frutas Tropical",
         "available": false
       },
-      "Orange Soda: Refrigerante Laranja",
-      "Cool Mentol: Menta gelada refresca",
-      "Cherry Lemonade: Cereja com limão",
+      {
+        "name": "Orange Soda: Refrigerante Laranja",
+        "available": true
+      },
+      {
+        "name": "Cool Mentol: Menta gelada refresca",
+        "available": false
+      },
+      {
+        "name": "Cherry Lemonade: Cereja com limão",
+        "available": false
+      },
       {
         "name": "Strawberry Guava Ice: Morango Goiaba",
         "available": false
       },
       "Blueberry Raspberry: Mirtilo Framboesa",
-      "Pineaple ice: Abacaxi Gelado",
-      "Cola ice: Cola Refrescante"
+      {
+        "name": "Pineaple ice: Abacaxi Gelado",
+        "available": false
+      },
+      {
+        "name": "Cola ice: Cola Refrescante",
+        "available": false
+      }
     ],
     "image": "/vnano.jpg",
     "available": true
@@ -1421,7 +1443,7 @@
       },
       {
         "name": "Sakura grape : ",
-        "available": true
+        "available": false
       },
       {
         "name": "Ice mint: menta gelada",
