@@ -1076,7 +1076,7 @@
       },
       {
         "name": "Grape Honeydew: Uva Melão",
-        "available": false
+        "available": true
       },
       {
         "name": "Monster Drink: Energético",
@@ -1088,11 +1088,11 @@
       },
       {
         "name": "Mentol: Mentolado",
-        "available": false
+        "available": true
       },
       {
         "name": "Blue Passion Mint: Mirtilo Maracujá Menta",
-        "available": false
+        "available": true
       },
       {
         "name": "Love66 :Menta melão melancia ",
@@ -1104,7 +1104,7 @@
       },
       {
         "name": "Banana Ice: Banana Gelada",
-        "available": false
+        "available": true
       },
       {
         "name": "Strawberey Wartemelon: Morango Melancia",
@@ -1117,6 +1117,30 @@
       {
         "name": "Gren Apple ice: maçã verde ",
         "available": false
+      },
+      {
+        "name": "Bluebarry mint: mergulho menta",
+        "available": true
+      },
+      {
+        "name": "Coconut Walter ice ",
+        "available": true
+      },
+      {
+        "name": "Sumer love",
+        "available": true
+      },
+      {
+        "name": "Banana custard",
+        "available": true
+      },
+      {
+        "name": "Blueberry ice: mertili gelado",
+        "available": true
+      },
+      {
+        "name": "Watermelon peach ice : melancia pêssego gelado ",
+        "available": true
       }
     ],
     "image": "/lifepode10k.jpg",
