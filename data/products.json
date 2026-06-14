@@ -338,7 +338,7 @@
       },
       {
         "name": "Grape ice",
-        "available": true
+        "available": false
       },
       {
         "name": "Icy mint: menta gelado ",
@@ -978,7 +978,7 @@
       },
       {
         "name": "Pineaple ice: abacaxi gelado ",
-        "available": true
+        "available": false
       },
       {
         "name": "Passion suor kiwi:",
@@ -998,7 +998,7 @@
       }
     ],
     "image": "/nikbar10k.jpg",
-    "available": true
+    "available": false
   },
   {
     "id": "qwgy8avmv",
