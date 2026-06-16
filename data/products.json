@@ -67,7 +67,7 @@
       },
       {
         "name": "Grape ice: Uva Ice",
-        "available": false
+        "available": true
       },
       {
         "name": "Watermelon ice: Melancia Ice",
@@ -111,6 +111,10 @@
       },
       {
         "name": "Bluebarry lemon: Mirtilo Limão ",
+        "available": true
+      },
+      {
+        "name": "Frozen grape",
         "available": true
       }
     ],
@@ -211,7 +215,7 @@
       },
       {
         "name": "Strawberry ice: Morango gelado",
-        "available": true
+        "available": false
       },
       {
         "name": "Pineaple Ice: Abacaxi Gelado",
@@ -258,11 +262,11 @@
       },
       {
         "name": "Strawberey Banana: Morango Banana",
-        "available": true
+        "available": false
       },
       {
         "name": "Wartemelon Ice: Melancia Gelada",
-        "available": false
+        "available": true
       },
       {
         "name": "Green Apple: Maçã verde",
@@ -373,7 +377,7 @@
     "flavors": [
       {
         "name": "Watermelon: Melancia",
-        "available": false
+        "available": true
       },
       {
         "name": "Pineaple kiwi dragon Fruit: Abacaxi kiwi pitaya",
@@ -401,11 +405,11 @@
       },
       {
         "name": "Tutti fruit mix : ",
-        "available": true
+        "available": false
       },
       {
         "name": "Strawberry: morango ",
-        "available": true
+        "available": false
       },
       {
         "name": "Strawberry Apple watermelon : morango maçã melancia ",
@@ -434,10 +438,14 @@
       {
         "name": "Passion fruit suor kiwi",
         "available": false
+      },
+      {
+        "name": "Sakura grape ",
+        "available": true
       }
     ],
     "image": "/v400ice.jpg",
-    "available": true
+    "available": false
   },
   {
     "id": "v400mix",
@@ -456,7 +464,7 @@
       },
       {
         "name": "Migth melon+Mentol",
-        "available": false
+        "available": true
       },
       {
         "name": "Pineaple mango Ice+Strawberey Ice",
@@ -468,7 +476,7 @@
       },
       {
         "name": "Grape pop+peach ice ",
-        "available": false
+        "available": true
       },
       {
         "name": "Orange ice+strawberry ice ",
@@ -476,7 +484,7 @@
       },
       {
         "name": "Blueberry ice+ raspeberry blackberry",
-        "available": false
+        "available": true
       },
       {
         "name": "Pineaple mango ice+strawberry ice",
@@ -496,7 +504,7 @@
       }
     ],
     "image": "/v400mix.jpg",
-    "available": false
+    "available": true
   },
   {
     "id": "v400sweet",
@@ -1512,7 +1520,7 @@
     "flavors": [
       {
         "name": "watermelon  ice ; MELANCIA ICE",
-        "available": false
+        "available": true
       },
       {
         "name": "pineapple strawberry banana ; ABACAXI MORANGO BANANA",
@@ -1540,7 +1548,7 @@
       },
       {
         "name": "Pear Watermelon dragonfruit ",
-        "available": true
+        "available": false
       },
       {
         "name": "Green Apple ice ",
@@ -1549,10 +1557,18 @@
       {
         "name": "Blue raz ice",
         "available": false
+      },
+      {
+        "name": "Cherei red apple lemon ",
+        "available": true
+      },
+      {
+        "name": "Green Apple ice ",
+        "available": true
       }
     ],
     "image": "elfbarbc10k.jpg",
-    "available": false,
+    "available": true,
     "puffs": "10K"
   },
   {
