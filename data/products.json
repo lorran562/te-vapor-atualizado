@@ -445,7 +445,7 @@
       }
     ],
     "image": "/v400ice.jpg",
-    "available": false
+    "available": true
   },
   {
     "id": "v400mix",
@@ -1708,7 +1708,7 @@
       },
       {
         "name": "fresh mint + mango orange ; HORTELA FRESCA +MANGA LARANJA ",
-        "available": true
+        "available": false
       },
       {
         "name": "blueberry bubble + suor green apple ; BOLHA DE MERTILO + MAÇA VERDE",
