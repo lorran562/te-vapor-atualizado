@@ -1,8 +1,12 @@
 'use client';
 
+import { ShoppingCart } from 'lucide-react';
 import Logo from './Logo';
+import { useCart } from '@/lib/cart-context';
 
 export default function Navbar() {
+  const { totalItems, openCart } = useCart();
+
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-white/5 bg-black/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
@@ -23,12 +27,26 @@ export default function Navbar() {
           </div>
         </div>
 
-        <button 
-          onClick={() => document.getElementById('catalogo')?.scrollIntoView({ behavior: 'smooth' })}
-          className="rounded-xl bg-primary px-6 py-2.5 text-sm font-bold text-black transition-all hover:bg-primary-hover active:scale-95"
-        >
-          Ver Catálogo
-        </button>
+        <div className="flex items-center gap-3">
+          <button
+            onClick={openCart}
+            className="relative flex h-11 w-11 items-center justify-center rounded-xl bg-zinc-900 border border-white/10 text-white transition-all hover:border-primary/50 active:scale-95"
+          >
+            <ShoppingCart size={20} />
+            {totalItems > 0 && (
+              <span className="absolute -top-1.5 -right-1.5 flex h-5 min-w-5 items-center justify-center rounded-full bg-primary px-1 text-[10px] font-black text-black">
+                {totalItems}
+              </span>
+            )}
+          </button>
+
+          <button
+            onClick={() => document.getElementById('catalogo')?.scrollIntoView({ behavior: 'smooth' })}
+            className="rounded-xl bg-primary px-6 py-2.5 text-sm font-bold text-black transition-all hover:bg-primary-hover active:scale-95"
+          >
+            Ver Catálogo
+          </button>
+        </div>
       </div>
     </nav>
   );

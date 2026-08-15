@@ -1,13 +1,14 @@
 'use client';
 
 import Image from 'next/image';
-import { ShoppingCart } from 'lucide-react';
+import { ShoppingCart, Minus, Plus, Check } from 'lucide-react';
 import { motion } from 'motion/react';
 import { useState } from 'react';
 
 import { Flavor } from '@/hooks/use-products';
 
 interface ProductProps {
+  id: string;
   brand: string;
   model: string;
   flavors: (string | Flavor)[];
@@ -15,10 +16,10 @@ interface ProductProps {
   puffs?: string;
   image: string;
   available?: boolean;
-  onBuy: (selectedFlavor: string) => void;
+  onAddToCart: (selectedFlavor: string, quantity: number) => void;
 }
 
-export default function ProductCard({ brand, model, flavors, price, puffs, image, available = true, onBuy }: ProductProps) {
+export default function ProductCard({ id, brand, model, flavors, price, puffs, image, available = true, onAddToCart }: ProductProps) {
   const getFlavorName = (f: string | Flavor) => typeof f === 'string' ? f : f.name;
   const isFlavorAvailable = (f: string | Flavor) => {
     if (typeof f === 'string') return !f.endsWith(' ❌');
@@ -28,6 +29,15 @@ export default function ProductCard({ brand, model, flavors, price, puffs, image
   const availableFlavors = flavors.filter(f => isFlavorAvailable(f));
   const initialFlavor = availableFlavors[0];
   const [selectedFlavor, setSelectedFlavor] = useState<string>(initialFlavor ? getFlavorName(initialFlavor) : '');
+  const [quantity, setQuantity] = useState(1);
+  const [justAdded, setJustAdded] = useState(false);
+
+  const handleAdd = () => {
+    onAddToCart(selectedFlavor, quantity);
+    setQuantity(1);
+    setJustAdded(true);
+    setTimeout(() => setJustAdded(false), 1500);
+  };
 
   return (
     <motion.div
@@ -80,17 +90,37 @@ export default function ProductCard({ brand, model, flavors, price, puffs, image
         </div>
 
         <div className="mt-auto">
-          <div className="mb-4">
-            <p className="text-2xl font-black text-primary tracking-tight">R$ {(price || 0).toFixed(2).replace('.', ',')}</p>
-            <p className="text-[10px] text-zinc-500">à vista no Pix</p>
+          <div className="mb-4 flex items-end justify-between gap-2">
+            <div>
+              <p className="text-2xl font-black text-primary tracking-tight">R$ {(price || 0).toFixed(2).replace('.', ',')}</p>
+              <p className="text-[10px] text-zinc-500">à vista no Pix</p>
+            </div>
+
+            <div className="flex items-center gap-2 rounded-lg bg-zinc-800 border border-white/5">
+              <button
+                onClick={() => setQuantity(q => Math.max(1, q - 1))}
+                className="p-2 text-zinc-400 hover:text-white transition-colors"
+              >
+                <Minus size={14} />
+              </button>
+              <span className="text-sm font-bold w-4 text-center">{quantity}</span>
+              <button
+                onClick={() => setQuantity(q => q + 1)}
+                className="p-2 text-zinc-400 hover:text-white transition-colors"
+              >
+                <Plus size={14} />
+              </button>
+            </div>
           </div>
 
-          <button 
-            onClick={() => onBuy(selectedFlavor)}
-            className="flex w-full items-center justify-center gap-2 rounded-xl py-3.5 text-sm font-black transition-all active:scale-95 bg-primary text-black hover:bg-primary-hover"
+          <button
+            onClick={handleAdd}
+            className={`flex w-full items-center justify-center gap-2 rounded-xl py-3.5 text-sm font-black transition-all active:scale-95 ${
+              justAdded ? 'bg-emerald-500 text-black' : 'bg-primary text-black hover:bg-primary-hover'
+            }`}
           >
-            <ShoppingCart size={18} />
-            Comprar
+            {justAdded ? <Check size={18} /> : <ShoppingCart size={18} />}
+            {justAdded ? 'Adicionado!' : 'Adicionar ao Carrinho'}
           </button>
         </div>
       </div>

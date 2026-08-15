@@ -1,22 +1,50 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useMemo } from 'react';
 import ProductCard from './ProductCard';
-import CheckoutModal from './CheckoutModal';
-import { useProducts, Product } from '@/hooks/use-products';
+import SearchBar from './SearchBar';
+import { useProducts } from '@/hooks/use-products';
+import { useCart } from '@/lib/cart-context';
+import { SearchX } from 'lucide-react';
 
 export default function ProductGrid() {
   const { products, isLoading } = useProducts();
-  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const { addItem } = useCart();
+  const [search, setSearch] = useState('');
 
-  const handleBuy = (product: Product, flavor: string) => {
-    setSelectedProduct({ ...product, selectedFlavor: flavor } as any);
-    setIsModalOpen(true);
+  const availableProducts = useMemo(
+    () => products.filter(p => p.available !== false),
+    [products]
+  );
+
+  const filteredProducts = useMemo(() => {
+    const term = search.trim().toLowerCase();
+    if (!term) return availableProducts;
+    return availableProducts.filter(p =>
+      p.brand.toLowerCase().includes(term) ||
+      p.model.toLowerCase().includes(term)
+    );
+  }, [availableProducts, search]);
+
+  // Do mais barato para o mais caro
+  const sortedProducts = useMemo(
+    () => [...filteredProducts].sort((a, b) => (a.price || 0) - (b.price || 0)),
+    [filteredProducts]
+  );
+
+  const brands = Array.from(new Set(sortedProducts.map(p => p.brand)));
+
+  const handleAddToCart = (product: typeof products[number], flavor: string, quantity: number) => {
+    addItem({
+      id: product.id,
+      brand: product.brand,
+      model: product.model,
+      price: product.price,
+      puffs: product.puffs,
+      image: product.image,
+      flavor,
+    }, quantity);
   };
-
-  const availableProducts = products.filter(p => p.available !== false);
-  const brands = Array.from(new Set(availableProducts.map(p => p.brand)));
 
   if (isLoading) {
     return (
@@ -32,40 +60,42 @@ export default function ProductGrid() {
   return (
     <section id="catalogo" className="py-20 bg-black">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-4xl font-black tracking-tight mb-4">Nossos Produtos</h2>
-          <p className="text-zinc-500">Escolha seu pod favorito e faça seu pedido</p>
+          <p className="text-zinc-500 mb-8">Escolha seu pod favorito e faça seu pedido</p>
+          <SearchBar value={search} onChange={setSearch} />
         </div>
+
+        {sortedProducts.length === 0 && (
+          <div className="flex flex-col items-center justify-center gap-4 py-24 text-center">
+            <SearchX size={40} className="text-zinc-700" />
+            <p className="text-zinc-500">Nenhum produto encontrado para &ldquo;{search}&rdquo;</p>
+          </div>
+        )}
 
         {brands.map(brand => (
           <div key={brand} className="mb-16">
             <div className="mb-8 flex items-center justify-between border-b border-white/5 pb-4">
               <h3 className="text-sm font-black text-primary uppercase tracking-widest">{brand}</h3>
               <span className="text-xs text-zinc-500">
-                {availableProducts.filter(p => p.brand === brand).length} produtos
+                {sortedProducts.filter(p => p.brand === brand).length} produtos
               </span>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {availableProducts
+              {sortedProducts
                 .filter(p => p.brand === brand)
                 .map((product) => (
-                  <ProductCard 
-                    key={product.id} 
-                    {...product} 
-                    onBuy={(flavor) => handleBuy(product, flavor)}
+                  <ProductCard
+                    key={product.id}
+                    {...product}
+                    onAddToCart={(flavor, quantity) => handleAddToCart(product, flavor, quantity)}
                   />
                 ))}
             </div>
           </div>
         ))}
       </div>
-
-      <CheckoutModal 
-        isOpen={isModalOpen} 
-        onClose={() => setIsModalOpen(false)} 
-        product={selectedProduct as any} 
-      />
     </section>
   );
 }
